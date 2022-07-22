@@ -1,6 +1,6 @@
 ﻿namespace AutoComplete
 {
-	partial class AutocompleteForm
+	partial class AutoCompleteForm
 	{
 		/// <summary>
 		/// Required designer variable.

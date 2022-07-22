@@ -5,7 +5,7 @@ using NUnit.Framework;
 
 namespace AutoComplete
 {
-    internal class AutocompleteTask
+    internal class AutoCompleteTask
     {
         /// <returns>
         /// Возвращает первую фразу словаря, начинающуюся с prefix.
@@ -49,7 +49,7 @@ namespace AutoComplete
     }
 
     [TestFixture]
-    public class AutocompleteTests
+    public class AutoCompleteTests
     {
         [Test]
         public void TopByPrefix_IsEmpty_WhenNoPhrases()

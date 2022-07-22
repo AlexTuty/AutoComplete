@@ -5,13 +5,13 @@ using System.Windows.Forms;
 
 namespace AutoComplete
 {
-    public partial class AutocompleteForm : Form
+    public partial class AutoCompleteForm : Form
     {
         private long count;
         private Phrases phrases;
         private long sumMs;
 
-        public AutocompleteForm()
+        public AutoCompleteForm()
         {
             InitializeComponent();
         }
@@ -19,11 +19,11 @@ namespace AutoComplete
         private Tuple<TimeSpan, string[], int> FindItems(string prefix)
         {
             var sw = Stopwatch.StartNew();
-            var foundItems = AutocompleteTask.GetTopByPrefix(phrases, prefix, 10);
-            var foundItemsCount = AutocompleteTask.GetCountByPrefix(phrases, prefix);
+            var foundItems = AutoCompleteTask.GetTopByPrefix(phrases, prefix, 10);
+            var foundItemsCount = AutoCompleteTask.GetCountByPrefix(phrases, prefix);
             if (foundItems == null)
             {
-                var oneItem = AutocompleteTask.FindFirstByPrefix(phrases, prefix);
+                var oneItem = AutoCompleteTask.FindFirstByPrefix(phrases, prefix);
                 foundItems = oneItem != null ? new[] {oneItem} : new string[0];
             }
 

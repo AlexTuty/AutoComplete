@@ -50,13 +50,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AutocompleteForm.cs">
+    <Compile Include="AutoCompleteForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AutocompleteForm.Designer.cs">
-      <DependentUpon>AutocompleteForm.cs</DependentUpon>
+    <Compile Include="AutoCompleteForm.Designer.cs">
+      <DependentUpon>AutoCompleteForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="AutocompleteTask.cs" />
+    <Compile Include="AutoCompleteTask.cs" />
     <Compile Include="LeftBorderTask.cs" />
     <Compile Include="Phrases.cs" />
     <Compile Include="PhrasesLoader.cs" />
@@ -64,8 +64,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RightBorderTask.cs" />
     <Compile Include="TaskExtensions.cs" />
-    <EmbeddedResource Include="AutocompleteForm.resx">
-      <DependentUpon>AutocompleteForm.cs</DependentUpon>
+    <EmbeddedResource Include="AutoCompleteForm.resx">
+      <DependentUpon>AutoCompleteForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
