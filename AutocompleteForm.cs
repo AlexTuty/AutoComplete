@@ -34,8 +34,8 @@ namespace AutoComplete
         {
             if (inputBox.ReadOnly) return;
             var prefix = inputBox.Text;
-            autocompleteList.Items.Clear();
-            autocompleteList.Items.Add("...searching...");
+            autoCompleteList.Items.Clear();
+            autoCompleteList.Items.Add("...searching...");
             inputBox.ReadOnly = true;
             var task = Task.Run(() => FindItems(prefix));
             await task
@@ -45,7 +45,7 @@ namespace AutoComplete
 
         private void UpdateUi(Task<Tuple<TimeSpan, string[], int>> prevTask)
         {
-            autocompleteList.Items.Clear();
+            autoCompleteList.Items.Clear();
             inputBox.ReadOnly = false;
             var tuple = prevTask.IsFaulted
                 ? Tuple.Create(TimeSpan.FromSeconds(2), new[] {"... search timeout :("}, -1)
@@ -58,7 +58,7 @@ namespace AutoComplete
             statusLabel.Text = string.Format("Found: {0}; Last time: {1} ms; Average time: {2} ms", foundItemsCount,
                 timeTaken, sumMs / count);
             foreach (var foundItem in foundItems)
-                autocompleteList.Items.Add(foundItem);
+                autoCompleteList.Items.Add(foundItem);
         }
 
         private void AutocompleteForm_Load(object sender, EventArgs e)

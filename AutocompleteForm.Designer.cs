@@ -29,7 +29,7 @@
 		private void InitializeComponent()
 		{
 			this.inputBox = new System.Windows.Forms.TextBox();
-			this.autocompleteList = new System.Windows.Forms.ListBox();
+			this.autoCompleteList = new System.Windows.Forms.ListBox();
 			this.statusStrip1 = new System.Windows.Forms.StatusStrip();
 			this.statusLabel = new System.Windows.Forms.ToolStripStatusLabel();
 			this.statusStrip1.SuspendLayout();
@@ -48,13 +48,13 @@
 			// 
 			// autocompleteList
 			// 
-			this.autocompleteList.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.autocompleteList.FormattingEnabled = true;
-			this.autocompleteList.Location = new System.Drawing.Point(0, 29);
-			this.autocompleteList.Margin = new System.Windows.Forms.Padding(0);
-			this.autocompleteList.Name = "autocompleteList";
-			this.autocompleteList.Size = new System.Drawing.Size(447, 233);
-			this.autocompleteList.TabIndex = 1;
+			this.autoCompleteList.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.autoCompleteList.FormattingEnabled = true;
+			this.autoCompleteList.Location = new System.Drawing.Point(0, 29);
+			this.autoCompleteList.Margin = new System.Windows.Forms.Padding(0);
+			this.autoCompleteList.Name = "autocompleteList";
+			this.autoCompleteList.Size = new System.Drawing.Size(447, 233);
+			this.autoCompleteList.TabIndex = 1;
 			// 
 			// statusStrip1
 			// 
@@ -77,7 +77,7 @@
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(447, 262);
 			this.Controls.Add(this.statusStrip1);
-			this.Controls.Add(this.autocompleteList);
+			this.Controls.Add(this.autoCompleteList);
 			this.Controls.Add(this.inputBox);
 			this.Name = "AutocompleteForm";
 			this.Text = "Start typing";
@@ -92,7 +92,7 @@
 		#endregion
 
 		private System.Windows.Forms.TextBox inputBox;
-		private System.Windows.Forms.ListBox autocompleteList;
+		private System.Windows.Forms.ListBox autoCompleteList;
 		private System.Windows.Forms.StatusStrip statusStrip1;
 		private System.Windows.Forms.ToolStripStatusLabel statusLabel;
 	}
